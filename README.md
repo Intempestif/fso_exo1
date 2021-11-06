@@ -1,3 +1,3 @@
 Exercices React sur FullStackOpen.com
 
-![Alt text](/img/exo1.jpg?raw=true "exo1")
+![exo1](https://user-images.githubusercontent.com/17856308/140601098-04264148-49a4-4584-9021-34928bc36934.png)
