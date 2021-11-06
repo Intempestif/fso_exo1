@@ -1,6 +1,6 @@
 Exercices React sur FullStackOpen.com
 
-Avec ce cours et ces exercices, j'ai appris :
+Avec ce cours et ces exercices, j'ai appris : <br>
   à créer un projet react
   à créer et manipuler des components
   à créer et manipuler des data avec les props
