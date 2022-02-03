@@ -5,18 +5,26 @@ const App = () => {
   // const definitions
   const course = 'Half Stack application development'
   const title = 'FullStackOpen React Exercise 1'
-  const part1 = 'Fundamentals of React'
-  const exercises1 = 10
-  const part2 = 'Using props to pass data'
-  const exercises2 = 7
-  const part3 = 'State of a component'
-  const exercises3 = 14
-  const total = exercises1 + exercises2 + exercises3
+  
+  const part1 = {
+    name: 'Fundamentals of React',
+    exercises: 10
+  }
+  const part2 = {
+    name: 'Using props to pass data',
+    exercises: 7
+  }
+  const part3 = {
+    name: 'State of a component',
+    exercises: 14
+  }
+
+  const total = part1.exercises + part2.exercises + part3.exercises
 
   return (
     <div>
       <Header title={title} course={course} />
-      <List part1={part1} exercises1={exercises1} part2={part2} exercises2={exercises2} part3={part3} exercises3={exercises3} />
+      <List part1={part1} part2={part2} part3={part3} />
       <Total total={total} />
     </div>
   )
@@ -36,33 +44,17 @@ const List = (props) => {
     <div className="list">
       <h2>List of exercises</h2>
       <ul>
-        <Part1 name={props.part1} number={props.exercises1} />
-        <Part2 name={props.part2} number={props.exercises2} />
-        <Part3 name={props.part3} number={props.exercises3} />
+        <Part name={props.part1.name} number={props.part1.exercises} />
+        <Part name={props.part2.name} number={props.part2.exercises} />
+        <Part name={props.part3.name} number={props.part3.exercises} />
       </ul>
     </div>
   )
 }
 
-const Part1 = (props) => {
+const Part = (props) => {
   return (
-    <li className="part1">
-      {props.name} : {props.number} exercises
-    </li>
-  )
-}
-
-const Part2 = (props) => {
-  return (
-    <li className="part2">
-      {props.name} : {props.number} exercises
-    </li>
-  )
-}
-
-const Part3 = (props) => {
-  return (
-    <li className="part3">
+    <li className="">
       {props.name} : {props.number} exercises
     </li>
   )
