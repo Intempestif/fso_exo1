@@ -1,5 +1,7 @@
 Exercices React sur FullStackOpen.com
 
+heroku app : https://fso-exo1.herokuapp.com
+
 Avec ce cours et ces exercices, j'ai appris : <br>
   à créer un projet react <br>
   à créer et manipuler des components <br>
